@@ -1,0 +1,45 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>The Calculator</title>
+</head>
+<body>
+    <h1>THE CALCULTOR 3000</h1>
+    <div id="form_window">
+        <form name="calculator">
+            <input type="text" name="display" id="display">
+            <br>
+            <div id="keys_window">
+                <input type="button" value="1" onclick="addToDisplay('1')">
+                <input type="button" value="2" onclick="addToDisplay('2')">
+                <input type="button" value="3" onclick="addToDisplay('3')">
+                <input type="button" value="/" onclick="addToDisplay('/')">
+                <br>
+                <input type="button" value="4" onclick="addToDisplay('4')">
+                <input type="button" value="5" onclick="addToDisplay('5')">
+                <input type="button" value="6" onclick="addToDisplay('6')">
+                <input type="button" value="-" onclick="addToDisplay('-')">
+                <br>
+                <input type="button" value="7" onclick="addToDisplay('7')">
+                <input type="button" value="8" onclick="addToDisplay('8')">
+                <input type="button" value="9" onclick="addToDisplay('9')">
+                <input type="button" value="+" onclick="addToDisplay('+')">
+                <br>
+                <input type="button" value="0" onclick="addToDisplay('0')">
+                <input type="button" value="." onclick="addToDisplay('.')">
+                <input type="button" value="*" onclick="addToDisplay('*')">
+                <input type="button" value="=" onclick="calculate()">
+                <br>
+                <input type="button" value="C" onclick="clearDisplay()">
+            </div>
+        </form>
+    </div>
+    <footer>Tous droits réservés à Bertrand Tang copyright © 2023</footer>
+    <script src="public/js/addToDisplay.js"></script>
+    <script src="public/js/calculate.js"></script>
+    <script src="public/js/clearDisplay.js"></script>
+</body>
+</html>
